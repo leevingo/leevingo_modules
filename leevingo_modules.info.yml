@@ -1,0 +1,7 @@
+name: Leevingo modules
+type: module
+description: 'A set of modules to be used by leevingo.'
+core: 8.x
+package: Leevingo
+version: VERSION
+dependencies:
