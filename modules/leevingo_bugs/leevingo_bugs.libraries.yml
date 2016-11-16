@@ -1,0 +1,9 @@
+leevingo_bugs.bugs:
+  version: 1.0
+  js:
+    js/leevingo_bugs.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

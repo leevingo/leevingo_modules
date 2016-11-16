@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Holds general functionality for leevingo_bugs.
+ */
+
+function leevingo_bugs_page_attachments(array &$page) {
+
+  // Get config.
+  $config = \Drupal::config('leevingo_bugs.settings');
+
+  if ($config->get('general_enable')) {
+
+    $negate = $config->get('general_visibility_negate');
+
+    $current_path = \Drupal::service('path.current')->getPath();
+    $result = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+    $path_maches = \Drupal::service('path.matcher')->matchPath($current_path, $config->get('general_visibility_pages'));
+
+
+    if (($path_maches && !$negate) ||  (!$path_maches && $negate)){
+      // Attach js library.
+      $page['#attached']['library'][] = 'leevingo_bugs/leevingo_bugs.bugs';
+      $page['#attached']['drupalSettings']['leevingo_bugs']['config'] = $config->getRawData();
+    }
+  }
+}

@@ -1,0 +1,5 @@
+leevingo_modules.general:
+  version: 1.0
+  css:
+    theme:
+      css/leevingo_modules.css: {}

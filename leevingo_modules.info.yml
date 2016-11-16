@@ -1,0 +1,6 @@
+name: Leevingo modules
+type: module
+description: 'Defines general functionality for the Leevingo modules.'
+package: Leevingo
+version: 1.0
+core: 8.x

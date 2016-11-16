@@ -1,0 +1,6 @@
+leevingo_bugs.settings:
+  title: 'Bugs Settings'
+  description: 'Manage the settings for the Leevingo bugs module.'
+  parent: leevingo_modules.leevingo
+  route_name: leevingo_bugs.bugs
+  weight: 10

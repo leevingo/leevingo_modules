@@ -1,0 +1,4 @@
+administer leevingo settings:
+  title: 'Administer Leevingo settings.'
+  restrict access: true
+  description: 'This allows to change the general settings for the Leevingo modules.'

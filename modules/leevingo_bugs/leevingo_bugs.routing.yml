@@ -1,0 +1,7 @@
+leevingo_bugs.bugs:
+  path: '/admin/leevingo/bugs'
+  defaults:
+    _form: 'Drupal\leevingo_bugs\Form\BugsSettingsForm'
+    _title: 'Bugs Settings'
+  requirements:
+    _permission: 'administer leevingo settings'

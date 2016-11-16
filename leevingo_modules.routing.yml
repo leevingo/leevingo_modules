@@ -1,0 +1,15 @@
+leevingo_modules.leevingo:
+  path: '/admin/leevingo'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Leevingo'
+  requirements:
+    _permission: 'administer leevingo settings'
+
+leevingo_modules.leevingo.settings:
+  path: '/admin/leevingo/settings'
+  defaults:
+    _form: 'Drupal\leevingo_modules\Form\GeneralSettingsForm'
+    _title: 'General Settings'
+  requirements:
+    _permission: 'administer leevingo settings'

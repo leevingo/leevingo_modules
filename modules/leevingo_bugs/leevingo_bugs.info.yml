@@ -1,0 +1,9 @@
+name: Leevingo bugs
+type: module
+description: 'Release bugs on your screen.'
+package: Leevingo
+version: 1.0
+core: 8.x
+
+dependencies:
+  - leevingo_modules

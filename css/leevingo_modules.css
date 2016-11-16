@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Styling for Leevingo modules.
+ */
+
+.toolbar-icon-leevingo-modules-leevingo:before {
+    background-image: url(../images/leevingo.svg);
+}

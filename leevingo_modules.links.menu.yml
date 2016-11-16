@@ -1,0 +1,13 @@
+leevingo_modules.leevingo:
+  title: 'Leevingo'
+  description: 'Manage the Leevingo modules.'
+  parent: system.admin
+  route_name: leevingo_modules.leevingo
+  weight: 100
+
+leevingo_modules.leevingo.settings:
+  title: 'General Settings'
+  description: 'Manage the general settings for the Leevingo modules.'
+  parent: leevingo_modules.leevingo
+  route_name: leevingo_modules.leevingo.settings
+  weight: 0

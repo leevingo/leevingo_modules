@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @file
+ * Holds general functionality for leevingo_modules.
+ */
+
+function leevingo_modules_page_attachments(array &$page) {
+  // Attach general css.
+  $page['#attached']['library'][] = 'leevingo_modules/leevingo_modules.general';
+}
